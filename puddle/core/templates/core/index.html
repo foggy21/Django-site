@@ -10,7 +10,7 @@ Welcome
     <div class="grid grid-cols-3 gap-3">
         {%for item in items%}
             <div>
-                <a href="#">
+                <a href="{% url 'item:detail' item.id %}">
                     <div style="display: flex; justify-content: center; align-items: center;">
                         <img src="{{item.image.url}}" class="rounded-t-lx" style="height: 300px; width: 300px;">
                     </div>
